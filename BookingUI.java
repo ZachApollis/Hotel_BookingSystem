@@ -12,7 +12,7 @@ import java.util.Scanner;// allows for the use of the Scanner class//
  */
 public class BookingUI {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//main method//
 
         Scanner sc = new Scanner(System.in);
         BookingManager manager = new BookingManager();
