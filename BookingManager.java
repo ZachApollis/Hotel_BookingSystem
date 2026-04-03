@@ -36,7 +36,7 @@ public class BookingManager {
     public boolean deleteBookings(String bookingID) {
         //deletes booking by ID//
 
-        int pos = -1;
+        int pos = -1;// Stores the position of the booking to delete (-1 means not found)
         for (int i = 0; i < size; i++) {
             if (bArr[i].getBookingID().equalsIgnoreCase(bookingID)) {
                 pos = i;
