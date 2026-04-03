@@ -28,7 +28,7 @@ public class BookingManager {
         }
         String temp = " ";
         for (int i = 0; i < size; i++) {
-            temp = bArr[i] + "\n";
+            temp += bArr[i] + "\n";
         }
         return temp;
     }
