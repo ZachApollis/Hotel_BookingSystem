@@ -12,7 +12,8 @@ public class BookingManager {
     private Booking[] bArr = new Booking[30];//booking array of 30 objects//
     private int size = 0;//int size of 0 objects//
 
-    public void addBooking(Booking booking) {// adds a new booking to the booking array//
+    public void addBooking(Booking booking) {
+        // Adds the given booking to the next available position in the array and increases the size counter
         if (size < bArr.length) {
             bArr[size] = booking;
             size++;
@@ -25,9 +26,9 @@ public class BookingManager {
             return "no bookings availible";
 
         }
-        String temp = " ";
-        for (int i = 0; i < size; i++) {
-            temp = bArr[i] + "\n";
+        String temp = " ";// temporarily stores all bookings//
+        for (int i = 0; i < size; i++) {// for loop, loops through all stored bookings//
+            temp += bArr[i] + "\n";
         }
         return temp;
     }
@@ -35,12 +36,13 @@ public class BookingManager {
     public boolean deleteBookings(String bookingID) {
         //deletes booking by ID//
 
-        int pos = 1;
+        int pos = -1;// Stores the position of the booking to delete (-1 means not found)
         for (int i = 0; i < size; i++) {
             if (bArr[i].getBookingID().equalsIgnoreCase(bookingID)) {
                 pos = i;
+                break;// Stop searching once found
             }
-            break;
+           
         }
         if (pos == -1) {
             return false;//not found//   
