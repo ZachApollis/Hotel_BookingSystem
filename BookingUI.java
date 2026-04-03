@@ -1,6 +1,6 @@
 
-import java.time.LocalDate;
-import java.util.Scanner;
+import java.time.LocalDate;//allows for the use of LocalDate arrival and departure//
+import java.util.Scanner;// allows for the use of the Scanner class//
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -12,15 +12,15 @@ import java.util.Scanner;
  */
 public class BookingUI {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//main method//
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);//creation of the Scanner object//
         BookingManager manager = new BookingManager();
 
         int choice;
 
         do {
-            System.out.println("\n--- BOOKING SYSTEM ---");
+            System.out.println("\n--- BOOKING SYSTEM ---");//creation of the UI for the Scanner//
             System.out.println("1. Add Booking");
             System.out.println("2. View Bookings");
             System.out.println("3. Delete Booking");
@@ -76,6 +76,6 @@ public class BookingUI {
 
         } while (choice != 4);
 
-        sc.close();
+        sc.close();//closing of the Scanner object//
     }
 }
