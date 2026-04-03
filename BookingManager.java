@@ -40,7 +40,7 @@ public class BookingManager {
         for (int i = 0; i < size; i++) {
             if (bArr[i].getBookingID().equalsIgnoreCase(bookingID)) {
                 pos = i;
-                break;
+                break;// Stop searching once found
             }
            
         }
