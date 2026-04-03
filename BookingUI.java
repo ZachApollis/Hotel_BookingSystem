@@ -20,7 +20,7 @@ public class BookingUI {
         int choice;
 
         do {
-            System.out.println("\n--- BOOKING SYSTEM ---");
+            System.out.println("\n--- BOOKING SYSTEM ---");//creation of the UI for the Scanner//
             System.out.println("1. Add Booking");
             System.out.println("2. View Bookings");
             System.out.println("3. Delete Booking");
