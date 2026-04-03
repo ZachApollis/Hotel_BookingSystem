@@ -76,6 +76,6 @@ public class BookingUI {
 
         } while (choice != 4);
 
-        sc.close();
+        sc.close();//closing of the Scanner object//
     }
 }
