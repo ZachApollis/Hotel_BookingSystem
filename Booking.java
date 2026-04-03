@@ -1,6 +1,6 @@
 
-import java.time.LocalDate;
-import java.time.Period;
+import java.time.LocalDate;//allows for the use of LocalDate arrival and departure//
+import java.time.Period;// allows for the user to find a period difference between 2 times//
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -11,7 +11,7 @@ import java.time.Period;
  * @author bertrambock
  */
 public class Booking {
-
+// all field are made private so they cnnot be accessed outside the main method//
     private String bookingID;//stores all bookings that will be made//
     private LocalDate arrivalDate, departureDate;//stores the arrival dates and the departure dates for calculation//
     private int numPeople;//tracks the number of people staying in a room//
@@ -78,6 +78,7 @@ public class Booking {
     public String toString() {
         //ToString method//
         //returns a formatted string representing all booking details//
+        
 
         return "----- Booking Details -----\n" + "Booking ID   : " + bookingID + "\n" + "Arrival Date : " + arrivalDate + "\n" + "Departure Date: " + departureDate + "\n" + "People       : " + numPeople + "\n" + "Nights       : " + numNights() + "\n" + "Total Cost   : R" + Cost() + "\n" + "----------------------------";
     }
