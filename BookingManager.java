@@ -12,7 +12,8 @@ public class BookingManager {
     private Booking[] bArr = new Booking[30];//booking array of 30 objects//
     private int size = 0;//int size of 0 objects//
 
-    public void addBooking(Booking booking) {// adds a new booking to the booking array//
+    public void addBooking(Booking booking) {
+        // Adds the given booking to the next available position in the array and increases the size counter
         if (size < bArr.length) {
             bArr[size] = booking;
             size++;
