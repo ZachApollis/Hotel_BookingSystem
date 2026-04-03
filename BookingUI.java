@@ -14,7 +14,7 @@ public class BookingUI {
 
     public static void main(String[] args) {//main method//
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);//creation of the Scanner object//
         BookingManager manager = new BookingManager();
 
         int choice;
