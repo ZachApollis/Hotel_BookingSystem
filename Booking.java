@@ -11,7 +11,7 @@ import java.time.Period;// allows for the user to find a period difference betwe
  * @author bertrambock
  */
 public class Booking {
-
+// all field are made private so they cnnot be accessed outside the main method//
     private String bookingID;//stores all bookings that will be made//
     private LocalDate arrivalDate, departureDate;//stores the arrival dates and the departure dates for calculation//
     private int numPeople;//tracks the number of people staying in a room//
