@@ -27,7 +27,7 @@ public class BookingManager {
 
         }
         String temp = " ";// temporarily stores all bookings//
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {// for loop, loops through all stored bookings//
             temp += bArr[i] + "\n";
         }
         return temp;
