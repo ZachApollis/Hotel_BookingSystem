@@ -1,6 +1,6 @@
 
-import java.time.LocalDate;
-import java.util.Scanner;
+import java.time.LocalDate;//allows for the use of LocalDate arrival and departure//
+import java.util.Scanner;// allows for the use of the Scanner class//
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
